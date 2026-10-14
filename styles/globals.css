@@ -1,0 +1,103 @@
+@import "tailwindcss";
+
+/* *{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+} */
+
+@theme {
+  --font-ropoto: "Roboto", sans-serif;
+  --font-libre: "Roboto", sans-serif;
+  --font-Nunito:"Roboto", sans-serif;
+  --font-BodoniModa: "Roboto", sans-serif;
+}
+
+
+@layer utilities {
+.container {
+    @media (width >= 1200px ) {
+        width: 900px ;
+
+      .lg\:w-\[1000px\] {
+      width: 870px;
+      }
+
+
+     .w-96 {
+     width: calc(var(--spacing) * 70);
+     }
+
+    
+
+    }
+
+    @media (width >= 992px ) {
+       width: 700px;
+
+      .md\:w-\[700px\] {
+    width: 660px;
+     }  
+
+     .md\:w-\[100px\] {
+    width: 188px;
+     }
+
+
+     .w-96 {
+    width: calc(var(--spacing) * 80);
+      }
+
+
+      .gap-10 {
+    gap: calc(var(--spacing) * 3);
+     }
+    }
+
+    @media (width >= 768px) {
+        width: 500px;
+
+    .md\:w-\[700px\] {
+    width: 660px;
+      }
+
+      .md\:w-\[100px\] {
+    width: 188px;
+      }
+
+        .w-96 {
+    width: calc(var(--spacing) * 80);
+     }
+
+     .gap-10 {
+    gap: calc(var(--spacing) * 3);
+     }
+    }
+
+    @media (width >= 576px) {
+        width: 100%;
+
+        .w-\[1200px\] {
+        width: 520px;
+      }
+
+      .text-fuchsia-700 {
+    color: var(--color-fuchsia-700);
+    font-size: 50px;
+    }
+
+
+    
+    }
+
+    @media (width >= 375px) {
+        width: 100%;
+
+        .w-\[1200px\] {
+         width: 330px;
+       }
+
+
+    }
+}
+}
